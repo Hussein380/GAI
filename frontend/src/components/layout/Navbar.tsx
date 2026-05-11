@@ -26,9 +26,8 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-gai-white/95 backdrop-blur-md border-b border-gai-teal/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <Link to="/" className="flex items-center space-x-3 group relative z-10 transition-transform hover:scale-105">
-            <img src="/logo.png" alt="GAI Logo" className="w-12 h-12 object-contain" />
-            <span className="font-sans font-bold text-2xl tracking-tighter text-gai-teal hidden sm:block">GAI</span>
+          <Link to="/" className="flex items-center group relative z-10 transition-transform hover:scale-105">
+            <img src="/logoGai.png" alt="GAI Logo" className="h-12 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}
