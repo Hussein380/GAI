@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gai-teal: #085041;
+    --gai-teal-light: #1D9E75;
+    --gai-gold: #C8861A;
+    --gai-white: #F4F2ED;
+  }
+
+  body {
+    @apply font-sans bg-gai-white text-gai-teal min-h-screen antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+}
+
+.cinematic-gradient {
+  background: linear-gradient(135deg, #085041 0%, #1D9E75 100%);
+}
+
+.text-gold-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#C8861A] to-[#E5A542];
+}
