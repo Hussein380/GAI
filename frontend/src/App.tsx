@@ -11,7 +11,6 @@ import ImpactPage from '@/pages/ImpactPage'
 import JoinUsPage from '@/pages/JoinUsPage'
 import DonatePage from '@/pages/DonatePage'
 import ApplyPage from '@/pages/ApplyPage'
-import PartnersPage from '@/pages/PartnersPage'
 import ContactPage from '@/pages/ContactPage'
 import { motion } from 'framer-motion'
 
@@ -153,7 +152,6 @@ function App() {
         <Route path="/join" element={<JoinUsPage />} />
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/apply" element={<ApplyPage />} />
-        <Route path="/partners" element={<PartnersPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </MainLayout>

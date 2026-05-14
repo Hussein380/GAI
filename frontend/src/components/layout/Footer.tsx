@@ -49,12 +49,20 @@ const Footer = () => {
 
           <div>
             <h4 className="font-bold mb-6 text-white uppercase tracking-wider text-sm">Join the Cycle</h4>
-            <ul className="space-y-4 text-gai-white/70">
+            <ul className="space-y-4 text-gai-white/70 mb-8">
               <li><Link to="/join" className="hover:text-gai-gold transition-colors">Become a Member</Link></li>
               <li><Link to="/donate" className="hover:text-gai-gold transition-colors">Give / Donate</Link></li>
               <li><Link to="/apply" className="hover:text-gai-gold transition-colors">Apply for Support</Link></li>
-              <li><Link to="/partners" className="hover:text-gai-gold transition-colors">Partners</Link></li>
             </ul>
+
+            <h4 className="font-bold mb-6 text-white uppercase tracking-wider text-sm">Our Partner</h4>
+            <div className="bg-white rounded-2xl p-4 inline-block">
+              <img 
+                src="/partners/afrika-dostluk-dernegi.png" 
+                alt="Afrika Dostluk Derneği" 
+                className="w-32 h-auto object-contain"
+              />
+            </div>
           </div>
         </div>
         

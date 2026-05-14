@@ -52,6 +52,48 @@ const ImpactPage = () => {
       </Section>
 
       <Section>
+        <div className="text-center mb-20">
+          <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-gai-gold mb-4">Supported Projects</h2>
+          <h3 className="text-4xl md:text-6xl tracking-tight">Concrete <span className="italic font-serif">Milestones</span></h3>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Nawanyago Institute */}
+          <div className="bg-white rounded-[3rem] p-12 border border-gai-teal/5 shadow-xl hover:shadow-2xl transition-all group">
+            <div className="w-16 h-16 bg-gai-teal/5 text-gai-teal rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+              <span className="text-2xl font-bold">01</span>
+            </div>
+            <h4 className="text-3xl font-bold mb-4 tracking-tight">Nawanyago Technical Institute</h4>
+            <p className="text-sm font-bold text-gai-gold uppercase tracking-widest mb-6">Kamuli Region, Uganda</p>
+            <div className="space-y-4 text-gai-teal/70 leading-relaxed mb-8">
+              <p>Established on a 40-acre campus in line with a five-year protocol signed between our association and the Ugandan Ministry of Education, supported by the Speaker of the Ugandan Parliament.</p>
+              <p>With support from TİKA, the institute was provided with technical equipment worth <strong className="text-gai-teal font-bold">$50,000 USD</strong>, and officially began education in March 2016.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <span className="bg-gai-teal/5 px-4 py-2 rounded-full text-sm font-bold text-gai-teal">40 Acres</span>
+              <span className="bg-gai-teal/5 px-4 py-2 rounded-full text-sm font-bold text-gai-teal">$50k Equipment</span>
+            </div>
+          </div>
+
+          {/* Uganda Orphanage */}
+          <div className="bg-white rounded-[3rem] p-12 border border-gai-teal/5 shadow-xl hover:shadow-2xl transition-all group">
+            <div className="w-16 h-16 bg-gai-teal/5 text-gai-teal rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+              <span className="text-2xl font-bold">02</span>
+            </div>
+            <h4 className="text-3xl font-bold mb-4 tracking-tight">Uganda Orphanage & School</h4>
+            <p className="text-sm font-bold text-gai-gold uppercase tracking-widest mb-6">Bombo Region, Uganda</p>
+            <div className="space-y-4 text-gai-teal/70 leading-relaxed mb-8">
+              <p>Located on a 12-acre allocated land, this project features an orphanage and the Sweet Walley Primary & Islamic Nursery School, approved by the Ministry of Education.</p>
+              <p>Currently educating <strong className="text-gai-teal font-bold">220 children</strong> (123 orphans) with full accommodation support. Over <strong className="text-gai-teal font-bold">$100,000 USD</strong> has been invested so far, with plans to expand capacity to 500.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <span className="bg-gai-teal/5 px-4 py-2 rounded-full text-sm font-bold text-gai-teal">220 Children</span>
+              <span className="bg-gai-teal/5 px-4 py-2 rounded-full text-sm font-bold text-gai-teal">$100k Invested</span>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section alternate>
         <div className="bg-gai-teal rounded-[4rem] p-16 text-white text-center">
           <h4 className="text-3xl md:text-5xl font-bold mb-8 tracking-tighter">Download Our Annual Report</h4>
           <p className="text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
