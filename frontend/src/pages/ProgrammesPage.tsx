@@ -2,6 +2,7 @@ import React from 'react'
 import Section from '@/components/layout/Section'
 import WhatWeDo from '@/features/impact/components/WhatWeDo'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const ProgrammesPage = () => {
   return (
@@ -42,9 +43,12 @@ const ProgrammesPage = () => {
             <p className="text-gai-white/60 mb-8">
               We are always looking for collaborators who share our vision for African education.
             </p>
-            <button className="bg-gai-gold text-gai-teal font-bold px-10 py-5 rounded-full hover:bg-white transition-colors">
+            <Link 
+              to="/contact" 
+              className="inline-block bg-gai-gold text-gai-teal font-bold px-10 py-5 rounded-full hover:bg-white transition-colors text-center"
+            >
               Contact Our Team
-            </button>
+            </Link>
           </div>
         </div>
       </Section>

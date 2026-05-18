@@ -9,12 +9,12 @@ const programs = [
   {
     title: 'Education Access',
     description: 'Scholarships and bursaries for deserving students across Africa to ensure financial barriers don\'t limit potential.',
-    fullDetails: 'We provide comprehensive financial support that covers tuition, living expenses, and learning materials. Our focus is on talented students from low-income backgrounds who have been accepted into top-tier continental and international universities.',
+    fullDetails: 'We aim to provide comprehensive financial support that covers tuition, living expenses, and learning materials. Our focus is on supporting talented students from underserved backgrounds to help them access top-tier continental and international universities.',
     impact: [
-      'Over 500 scholarships awarded to date',
-      '95% graduation rate among beneficiaries',
-      'Presence in 15 African countries',
-      'Partnerships with 20+ global universities'
+      'Establish scholarship funds for our first cohorts',
+      'Partner with key regional and global universities',
+      'Provide full tuition and living expenses for selected scholars',
+      'Ensure high graduation and retention rates'
     ],
     icon: BookOpen,
     image: impactImg,
@@ -22,12 +22,12 @@ const programs = [
   {
     title: 'Mentorship',
     description: 'Connecting scholars with global alumni professionals for guidance, career advice, and personal growth.',
-    fullDetails: 'Our mentorship program pairs current scholarship recipients with successful GAI alumni working in various fields globally. This "paying it forward" model ensures that students receive practical industry insights and career guidance from those who walked the same path.',
+    fullDetails: 'Our mentorship initiative is designed to pair current scholarship recipients with successful African alumni working in various fields globally. This "paying it forward" model ensures that students receive practical industry insights and career guidance.',
     impact: [
-      '1:1 dedicated mentorship for every scholar',
-      'Monthly global professional webinars',
-      'Career placement assistance',
-      'Industry-specific peer networks'
+      'Match every supported scholar with a dedicated industry mentor',
+      'Host regular online professional development webinars',
+      'Facilitate career guidance and transition assistance',
+      'Build industry-specific global peer networks'
     ],
     icon: Users2,
     image: alumniImg,
@@ -35,12 +35,12 @@ const programs = [
   {
     title: 'School Infrastructure',
     description: 'Supporting partner schools with essential facilities, from libraries to digital learning labs.',
-    fullDetails: 'We believe that the environment is "the third teacher." GAI invests in building modern science labs, digital libraries, and solar-powered classrooms in underserved rural schools to ensure that quality tools are available to every curious mind.',
+    fullDetails: 'We seek to support partner schools by assisting with essential learning facilities, modern science kits, and digital tools, ensuring that quality learning environments are available to every curious mind.',
     impact: [
-      '12 digital labs established in 2023',
-      'Solar energy solutions for 5 rural schools',
-      'Donation of 10,000+ textbooks annually',
-      'Training for 100+ local teachers'
+      'Support local partner schools with basic tech equipment and books',
+      'Collaborate on solar-powered classroom solutions in rural areas',
+      'Establish modern digital learning spaces in underserved regions',
+      'Provide training resources for local community teachers'
     ],
     icon: Construction,
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80',
@@ -48,12 +48,12 @@ const programs = [
   {
     title: 'Skills Training',
     description: 'Equipping students with future-ready skills in technology, leadership, and entrepreneurship.',
-    fullDetails: 'Beyond academic degrees, we prepare students for the fourth industrial revolution. Our intensives cover coding, financial literacy, and social entrepreneurship, empowering youth to create jobs rather than just seeking them.',
+    fullDetails: 'Beyond traditional academic degrees, we aim to prepare students for the modern workspace by offering practical workshops covering essential technology skills, financial literacy, and entrepreneurship.',
     impact: [
-      '2,000+ graduates from coding intensives',
-      '50+ student-led startups launched',
-      'Leadership summits across 5 regions',
-      'Certification in globally recognized skills'
+      'Roll out basic coding and technology training workshops',
+      'Mentor students on leadership and launching community projects',
+      'Organize soft-skills and workspace preparation summits',
+      'Help students work toward globally recognized skill certifications'
     ],
     icon: Rocket,
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80',
@@ -62,6 +62,19 @@ const programs = [
 
 const WhatWeDo = () => {
   const [selectedProgram, setSelectedProgram] = React.useState<typeof programs[0] | null>(null)
+
+  React.useEffect(() => {
+    // Preload all program images in background to make them appear instantly in the detail modal
+    programs.forEach((program) => {
+      if (program.image) {
+        const img = new Image()
+        img.src = program.image
+      }
+    })
+    // Preload fallback image
+    const fallbackImg = new Image()
+    fallbackImg.src = 'https://images.unsplash.com/photo-1524178232363-1fb28f74b573?auto=format&fit=crop&q=80'
+  }, [])
 
   return (
     <>

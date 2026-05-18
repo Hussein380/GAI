@@ -2,6 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import foundingTeam from '@/assets/somali_roots.png'
 
+// Preload founding story image instantly
+const storyPreload = new Image()
+storyPreload.src = foundingTeam
+
 const FoundingStory = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">

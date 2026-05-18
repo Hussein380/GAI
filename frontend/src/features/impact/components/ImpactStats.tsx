@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 import { Users, GraduationCap, Globe2, HeartHandshake } from 'lucide-react'
 
 const stats = [
-  { label: 'Students Supported', value: '1,200', icon: GraduationCap },
-  { label: 'Global Members', value: '450', icon: Users },
-  { label: 'Countries Reached', value: '12', icon: Globe2 },
-  { label: 'Impact Factor', value: '10x', icon: HeartHandshake },
+  { label: 'Students Supported', value: '50', icon: GraduationCap },
+  { label: 'Global Members', value: '100', icon: Users },
+  { label: 'Countries Reached', value: '9', icon: Globe2 },
+  { label: 'Partner Orgs', value: '1', icon: HeartHandshake },
 ]
 
 const ImpactStats = () => {

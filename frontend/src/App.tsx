@@ -14,6 +14,10 @@ import ApplyPage from '@/pages/ApplyPage'
 import ContactPage from '@/pages/ContactPage'
 import { motion } from 'framer-motion'
 
+// Preload critical above-the-fold hero image instantly
+const heroPreload = new Image()
+heroPreload.src = impactHero
+
 const HomePage = () => (
   <>
     <section className="relative h-screen flex items-start pt-20 md:pt-24 overflow-hidden">
@@ -23,6 +27,9 @@ const HomePage = () => (
           src={impactHero} 
           className="w-full h-full object-cover scale-105" 
           alt="African students in education"
+          loading="eager"
+          decoding="sync"
+          {...{ fetchPriority: 'high' } as any}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gai-white via-gai-white/80 to-transparent md:via-gai-white/60" />
       </div>
